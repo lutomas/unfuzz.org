@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>unfuzz.org</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Unfuzz – a new search concept that allows to start your adventure in finding.">
+    <meta name="robots" content="all">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@unfuzzhq">
+    <meta name="twitter:description"
+          content="Unfuzz – a new search concept that allows to start your adventure in finding.">
+    <meta name="twitter:url" content="https://twitter.com/unfuzzhq">
+    <meta property="og:title" content="Unfuzz">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+          content="unfuzz.org – antropology projects.">
+    <meta property="og:url" content="http://unfuzz.org">
+    <meta name="theme-color" content="#ffffff">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!--     Stiliai HTML'e nes github'as nepaeme tinkamo CSS failo is branch'o  -->
+    <style>
+        html, body, div, span {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+        html {
+            line-height: 1;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.6rem;
+            letter-spacing: 0.1em;
+            box-sizing: border-box;
+            background: #262424;
+            color: #FFF;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .content > div {
+            text-align: center;
+        }
+
+        .vs {
+            padding: 0 1rem 0 1rem;
+            font-size: 1rem;
+        }
+
+        .container {
+            margin-top: 30vh;
+        }
+
+        .container img {
+            width: 10vw;
+            height: 10vw;
+        }
+
+        footer {
+            width: 100%;
+            height: 2rem;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #000;
+        }
+
+        footer .year {
+            padding: 0 1rem 0 1rem;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <!-- header content -->
+</header>
+<main>
+    <!-- page content -->
+    <div class="content container">
+        <img class="" src="images/logo_unfuzz_white.svg">
+        <div class="content">
+            <div>ANTROPOLOGY-RESEARCH</div>
+            <div class="vs">people are the core</div>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <span>info(eat;)unfuzz.org</span>
+    <span id="currentYear" class="year"></span>
+    <span>© all rights reserved</span>
+</footer>
+
+<script>
+    function currentYear() {
+        return (new Date()).getFullYear()
+    }
+
+    document.getElementById("currentYear").textContent = currentYear()
+</script>
+</body>
+
+</html>
+
