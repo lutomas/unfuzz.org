@@ -1,0 +1,465 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>unfuzz.org</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Nice Select CSS ======-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.4.5.2.min.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <style>
+        .popup {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: white;
+            display: none;
+        }
+        .popup-content {
+            background-color: rgba(238, 196, 30, 0.4);
+            margin: 30% auto;
+            padding: 20px;
+            border: 1px solid #888888;
+            width: 30%;
+            font-weight: bolder;
+        }
+        .popup-content button {
+            display: block;
+            margin: 0 auto;
+        }
+        .show {
+            display: block;
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <section class="header_area">
+        <div class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="/unfuzz.org/en.html"> <!-- puslapis -->
+                                <img id="logo_img" src="assets/images/logo.svg" alt="Logo" width="60" height="60"> <!-- pakeisti logotipa -->
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="False" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Company</a>
+                                    </li>
+                                    <!--<li class="nav-item">
+                                        <a class="page-scroll" href="#about">Apie mus</a>
+                                    </li>-->
+                                   <!-- <li class="nav-item">
+                                        <a class="page-scroll" href="#news">Naujienos</a>
+                                    </li> -->
+                                    <!--<li class="nav-item">
+                                        <a class="page-scroll" href="#services">Veiklos</a>
+                                    </li>-->
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#project">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Contacts</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <!--<div class="nav-item">
+                                <a class="nav-link" href="en.html">
+                                    <img src = "assets/images/gb.svg" height="15" class="pr-1" />
+                                    English</a>
+                            </div>-->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+
+        <!--<div id="home" class="header_slider">
+            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/blog-1.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="slider_content">
+                                <h2 class="slider_title wow fadeInLefttBig" data-wow-duration="1.3s" data-wow-delay="0.2s">Unfuzz:   </span>Kultūra, Švietimas & Tyrimai<span></h2>
+                                <p class="wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">Kultūra trina ribas!</p>
+                                <a href="#services" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">Veiklos</a>
+                            </div>--> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+        </div> <!-- header slider -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+   <section id="about" class="about_area pt-50 pb-50">
+            <div class="about_image bg_cover" style="background-image: url(assets/images/blog-2BIG.jpg)"></div> <!-- about image -->
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-6">
+                        <div class="about_content">
+                            <div class="section_title">
+                                <h3 class="title">  <br>      <span>Unfuzz solution: Irena Saulutė Špakauskienė's exile story through a mobile guide and augmented reality</span></h3>
+                                <p>How can we preserve and convey the authentic stories of exiles to the modern person? This question became a challenge for the Lithuanian Ethnographic Museum, which sought to find new ways to engage today's audience with the stories that have shaped the memory of our nation. Especially when it comes to such special and moving narratives, like the exile story of Irena Saulutė Špakauskienė.<p>
+            					<p>Unfuzz responded to this GovTech Lithuania challenge by creating two innovative solutions – a mobile guide and an augmented reality application, which together allow visitors to experience Irena Saulutė Špakauskienė's exile stories in a new, immersive, and contemporary way.<p>
+                                    <div></div>
+                                <p>Project R E S U L T S:<p>
+                                <p>🔶 The mobile guide is a convenient application that provides visitors with the opportunity to listen to narrated stories, choose their preferred language, and, most importantly, adapt this technology for other exhibitions. The guide ensures that each visitor can immerse themselves in the story according to their needs, comfortably using their mobile device.<p>
+                                <p>🔶 The augmented reality experience is a unique technology that allows scanning a specific image and entering a virtual yurt space, which recreates the atmosphere of exile through visual imagery and sounds. This AR experience allows the visitor to experience the story firsthand, as if they themselves were part of it.<p>
+                                <p>The technologies used, such as React Native (for the mobile application) and Unreal Engine 5 (for the augmented reality content), ensure smooth and high-quality performance. This allows achieving the highest technical level, enabling visitors to immerse themselves more deeply in the stories without leaving the museum space.<p>
+                                <p>Project coordinator and partners: GovTechLab, Lithuanian Ethnographic Museum.<p>
+                                <a target="_blank" class="d-block" href="mailto:infol@unfuzz.org">info[at]unfuzz.org</a>
+                                <ul class="social">
+                                <a target="_blank" class="social_1" href="https://www.facebook.com/kulturosmediatoriai"><i class="lni lni-facebook-original"></i></a></li>
+                                </ul>
+                                <p>For more information, please visit <a target="_blank" href="https://govtechlab.lt/lt/winner/unfuzz-sprendimas-iamzinti-ir-perteikti-autentiskus-pasakojimus/">GovTech Lietuva portal</a>.</p>
+                           <!-- </div>
+                           <a href="javascript:void(0)" class="main-btn">Daugiau</a>
+                            </div> -->
+                            </div>
+
+   							<!--<button id="myButton" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+          						Daugiau
+      						</button>
+    						<div id="myPopup" class="popup">
+        						<div class="popup-content">
+            						<h3 class="title">Unfuzz</h3>
+            						<p>2023 metais bendraminčių įkurta nevyriausybinė organizacija veikianti kultūros edukacijų ir socialinės įtraukties srityje. Kalbame apie kultūros kaip mediatoriaus rolę visuomenės gyvenime.  Stebime pasaulio kultūros ir mokslo lauką, bei siekiame išlikti jautrūs vietos poreikiams, būti atviri naujovėms ir tarptautinėms tendencijoms.<p>
+            						<p>Rūpinamės kultūros mediacijos edukacija ir gilesniu kultūros pažinimu, organizuojame edukacijas verslui bei kultūros sektoriaus darbuotojams, kviečiame diskusijoms ir neformaliems pokalbiams, kultūros sektoriui padedame vystyti įtraukaus meno pristatymo formas, padėti lankytojui tapti dalyviu. Manome, kad kultūra įgalina kalbėti apie socialinius, politinius ar ekonominius iššūkius, sudaro sąlygas veiksmui ir atviram dialogui. Dalinamės tai, kuo patys tikime.<p>
+									<p>●	Mes kuriame sąlygas aktyviai dalyvauti savo bendruomenės gyvenime, o kultūra įgalina surasti sprendimus ir formas!<p>
+									<p>#pilietiškumas #suprantuprocesus #aktyvuskultūroje<p>
+									<p>●	Savo veiklomis skatiname bendravimą tarp kartų ir padedame stiprinti pagyvenusių žmonių kultūrinę įtrauktį<p>
+									<p>#gerbiupatirtį #aktyvuskultūroje #kultūrosmediacija<p>
+									<p>●	Pasitelkiant kokybinius tyrimo metodus, padedame suprasti kontekstus ir socialinius iššūkius<p>
+									<p>#kokybiniaityrimai #kontekstas #suvokimas #aiškumas
+									</p>
+            						<button id="closePopup" class="main-btn wow">
+                  						Uždaryti
+              						</button>
+        						</div>
+    						</div>-->
+
+
+                        <!-- <div class="about_counter d-flex flex-wrap">
+                            <div class="single_counter counter_1 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                                <div class="counter_wrapper">
+                                    <span class="counter">0</span>
+                                    <p>Įgyvendintų projektų skaičius</p>
+                                </div> 
+                            </div>  
+                            
+                            <div class="single_counter counter_2 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                                <div class="counter_wrapper">
+                                    <span class="counter">1</span>
+                                    <p>Pateiktų projektų skaičius</p>
+                                </div> 
+                           </div> 
+                            
+                           <div class="single_counter counter_2 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                                <div class="counter_wrapper">
+                                    <span class="counter">0</span>
+                                    <p>Klientų skaičius :)</p>
+                                </div> 
+                          </div> 
+                            
+                         <div class="single_counter counter_1 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="1.1s">
+                                <div class="counter_wrapper">
+                                    <span class="counter">2</span>
+                                    <p>Komandos narių</p>
+                                </div> 
+                       </div> 
+                     </div> 
+                    </div> -->
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- about wrapper -->
+    </section>
+    <!--====== ABOUT PART ENDS ======-->
+
+
+    <!--====== BLOG PART START ======-->
+
+    <section id="project" class="blog_area pt-160 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h3 class="title">Selected projects</h3>
+                        <p>Here you can find information related to our ongoing projects</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single_blog mt-30">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-1.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content">
+                            <div class="blog_meta">
+                            </div>
+                            <h4 class="blog_title"><a href="https://unfuzz.org/mewell.html">Unfuzz, together with international partners from Austria and Malta, launched the Erasmus+ small partnership adult education project MeWell</a></h4>
+                            <p>The project focuses on people aged 50 and over, with a special focus on seniors who, for various reasons, have limited access to cultural experiences. The aim is not only to enable these groups to participate more actively in cultural life, but also to ensure that educators in the cultural sector acquire the necessary knowledge and skills that allow a better understanding of the needs and expectations of this audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single_blog d-sm-flex mt-30">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-2.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content blog_content_2 media-body">
+                            <h4 class="blog_title"><a href="https://unfuzz.org/saulute.html">Unfuzz solution: Irena Saulutė Špakauskienė's exile story through a mobile guide and augmented reality.</a></h4>
+                            <p>In collaboration with the Lithuanian Ethnographic Museum, Unfuzz has created innovative solutions that allow modern audiences to experience the authentic stories of exiles.</p>
+                            <a href="https://unfuzz.org/saulute.html" class="more">Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="single_blog d-sm-flex mt-30">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-3.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content blog_content_2 media-body">
+                            <h4 class="blog_title"><a href="https://unfuzz.org/euro-opp.html">EURO-OPP. Erasmus+</a></h4>
+                            <p>The project's goal is to promote the social and labor integration of adults of foreign origin by providing learning, employment, and social participation opportunities, with special attention to vulnerable groups.</p>
+                            <a href="https://unfuzz.org/euro-opp.html" class="more">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== BLOG PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact_area pt-60 pb-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h3 class="title">Contact Us</h3>
+                    </div> <!-- section title -->
+                </div>
+        	</div> <!-- row -->
+            <div class="row">    
+                <div class="col-lg-4 ml-auto text-left mb-5 mb-lg-0">
+                        <i class="contact-info-title text-left"></i>
+                        <div>Unfuzz, NGO</div>
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <a class="d-block" href="mailto:info@unfuzz.org">info[at]unfuzz.org</a>
+                    </div>
+                    
+                    <div class="col-lg-6 mr-auto text-left mb-5 mb-lg-0">
+                        <i class="contact-info-title text-left"></i>
+                        <div>Registration number (company code): 306268677</div>
+                        <i class="contact-info-title text-left"></i>
+                        <div>VAT payer ID: LT100017340418 </div>
+                        <i class="contact-info-title text-left"></i>
+                        <div>Bank account holder: Unfuzz, VšĮ
+                        <i class="contact-info-title text-left"></i>
+                        <div>Account No (IBAN): LT71 3500 0100 1632 8220</div>
+                        <div>Bank name: Paysera LT, UAB</div>
+                        <div>Bank SWIFT: EVIULT2VXXX</div>
+                        <div>Branch address: Pilaites pr. 16, Vilnius, LT-04352, Lithuania</div>	
+                    </div>
+			</div>
+        </div>     
+
+
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+   <section id="footer" class="footer_area">
+        <div class="footer_widget pt-50 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 order-md-3 order-lg-1">
+                        <div class="footer_about mt-50">
+                            <a href="./en.html"><img src="assets/images/logo.svg" alt="logo" width="100" height="100"></a>
+                            <p>Unfuzz: Solutions for Culture. Cultural Mediators </p>
+                            <ul class="social">
+                                <li><a class="social_1" href="https://www.facebook.com/kulturosmediatoriai"><i class="lni lni-facebook-original"></i></a></li>
+                                <!--<li><a class="social_2" href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a class="social_3" href="javascript:void(0)"><i class="lni lni-instagram-original"></i></a></li> -->
+                                <li><a class="social_4" href="https://lt.linkedin.com/company/unfuzz?trk=public_profile_experience-item_profile-section-card_subtitle-click"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 order-md-3 order-lg-2">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Quick links</h4>
+                                <ul class="link">
+                                    <li><a href="#home">Unfuzz</a></li>
+                                    <li><a href="#about">Company</a></li>
+                                    <!--<li><a href="#news">News</a></li>-->
+                                    <li><a href="#services">Expertise</a></li>
+                                    <li><a href="#project">Projects</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                           <!-- <div class="footer_link mt-45">
+                                <h4 class="footer_title">Support</h4>
+                                <ul class="link">
+                                    <li><a href="javascript:void(0)">Customer Support</a></li>
+                                    <li><a href="javascript:void(0)">Privacy & Policy</a></li>
+                                    <li><a href="javascript:void(0)">Terms & Condition</a></li>
+                                    <li><a href="javascript:void(0)">Forum</a></li>
+                                    <li><a href="javascript:void(0)">Tour Guide</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-6 order-md-2 order-lg-3">
+                        <div class="footer_subscribe mt-45">
+                            <h4 class="footer_title">Subscribe Newsletter</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam.</p>
+                            <div class="subscribe_form">
+                                <form action="#">
+                                    <input type="text" placeholder="Enter email">
+                                    <button><i class="lni lni-arrow-right"></i></button>
+                                </form>
+                            </div>
+                        </div> <!-- footer subscribe -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+
+        </div> <!-- footer widget -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+<script>
+        myButton.addEventListener("click", function () {
+            myPopup.classList.add("show");
+        });
+        closePopup.addEventListener("click", function () {
+            myPopup.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup) {
+                myPopup.classList.remove("show");
+            }
+        });
+    </script>
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.4.5.2.min.js"></script>
+
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== Nice Select js ======-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
