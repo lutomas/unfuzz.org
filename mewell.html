@@ -1,469 +1,356 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MeWell — Cultural Mediation | Unfuzz</title>
 
-    <!--====== Title ======-->
-    <title>unfuzz.org</title>
+  <meta name="description" content="MeWell is an Erasmus+ small-scale partnership project designed to strengthen cultural mediation competencies and increase cultural participation and wellbeing among adults aged 50+ and seniors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Your existing CSS stack -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.4.5.2.min.css">
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
+  <!-- Font Awesome (needed for fas icons). If you already bundle it elsewhere, remove this. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!--====== Animate CSS ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+  <style>
+    .page-hero { padding: 90px 0 40px; background: #f7f7f7; }
+    .page-hero h1 { font-size: 30px; line-height: 1.2; margin: 14px 0 12px; }
+    .mewell-logo { max-width: 340px; height: auto; display: block; }
+    .meta-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .meta-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border-radius: 999px;
+      background: #ffffff; border: 1px solid rgba(0,0,0,0.08);
+      font-size: 14px;
+    }
+    .content-card {
+      background: #fff; border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px; padding: 22px;
+    }
+    .section-label {
+      font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em;
+      opacity: 0.75; margin-bottom: 10px;
+    }
+    .resource-list { list-style: none; padding-left: 0; margin: 0; display: grid; gap: 10px; }
+    .resource-link {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px; border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+      text-decoration: none;
+      transition: transform 0.06s ease, box-shadow 0.12s ease;
+    }
+    .resource-link:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,0.06); text-decoration: none; }
+    .resource-link i { font-size: 18px; }
+    .resource-link .small { display:block; font-size: 13px; opacity: 0.75; margin-top: 2px; }
 
-    <!--====== Nice Select CSS ======-->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
+    .timeline { list-style: none; padding-left: 0; margin: 0; }
+    .timeline li { padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+    .timeline li:last-child { border-bottom: none; }
 
+    .kv { display:flex; flex-wrap: wrap; gap: 10px 24px; }
+    .kv div { min-width: 240px; }
+    .kv strong { display:block; font-size: 13px; opacity: 0.75; font-weight: 600; }
 
-    <!--====== Line Icons CSS ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+    .social-clean { list-style:none; padding-left:0; margin:0; display:flex; gap:12px; }
+    .social-clean a {
+      display:inline-flex; align-items:center; justify-content:center;
+      width:40px; height:40px; border-radius: 999px;
+      border:1px solid rgba(0,0,0,0.08);
+      text-decoration: none;
+    }
 
-    <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.4.5.2.min.css">
-
-    <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
-    <style>
-        .popup {
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: white;
-            display: none;
-        }
-        .popup-content {
-            background-color: rgba(238, 196, 30, 0.4);
-            margin: 30% auto;
-            padding: 20px;
-            border: 1px solid #888888;
-            width: 30%;
-            font-weight: bolder;
-        }
-        .popup-content button {
-            display: block;
-            margin: 0 auto;
-        }
-        .show {
-            display: block;
-        }
-        h1 {
-            color: black;
-        }
-    </style>
-
+    .footer-min { padding: 40px 0; border-top: 1px solid rgba(0,0,0,0.08); margin-top: 50px; }
+  </style>
 </head>
 
 <body>
 
+  <!-- Header / Navbar -->
+  <section class="header_area">
+    <div class="header_navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="/en.html">
+                <img id="logo_img" src="assets/images/logo.svg" alt="Unfuzz logo" width="60" height="60">
+              </a>
 
-    <!--====== PRELOADER PART START ======-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
 
-    <div class="preloader">
-        <div class="loader">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="page-scroll" href="/en.html">Home</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="/en.html#project">Projects</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="/en.html#contact">Contacts</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
 
-    <!--====== PRELOADER PART ENDS ======-->
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="row align-items-center">
 
-    <!--====== HEADER PART START ======-->
+        <div class="col-lg-8">
+          <!-- MeWell logo (same as LT page, sourced from mewellculturalmediation.eu) -->
+          <img
+            class="mewell-logo"
+            src="https://mewellculturalmediation.eu/_next/image?q=100&url=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fmedia%2Ffile%2Fmewell.png%3F2026-01-21T08%3A59%3A21.265Z&w=3840"
+            alt="MeWell Cultural Mediation logo"
+            loading="lazy"
+          >
 
-    <section class="header_area">
-        <div class="header_navbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="/en.html"> <!-- puslapis -->
-                                <img id="logo_img" src="assets/images/logo.svg" alt="Logo" width="60" height="60"> <!-- pakeisti logotipa -->
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="False" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
+          <div class="section-label mt-3">Erasmus+ small-scale partnership project (adult education)</div>
+          <h1>Art Mediation for Knowledge, Cultural Participation and Wellbeing</h1>
 
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">MeWell</a>
-                                    </li>
-                                    <!--<li class="nav-item">
-                                        <a class="page-scroll" href="#about">Apie mus</a>
-                                    </li>-->
-                                   <!-- <li class="nav-item">
-                                        <a class="page-scroll" href="#news">Naujienos</a>
-                                    </li> -->
-                                    <!--<li class="nav-item">
-                                        <a class="page-scroll" href="#services">Veiklos</a>
-                                    </li>-->
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#project">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#contact">Contacts</a>
-                                    </li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                            <!--<div class="nav-item">
-                                <a class="nav-link" href="en.html">
-                                    <img src = "assets/images/gb.svg" height="15" class="pr-1" />
-                                    English</a>
-                            </div>-->
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- header navbar -->
+          <p class="mb-3">
+            MeWell strengthens the competencies of cultural sector educators and andragogues by applying <strong>cultural mediation</strong>
+            methods that support more active participation in culture and community life among adults aged 50+.
+          </p>
 
-        <!--<div id="home" class="header_slider">
-            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/blog-1.jpg)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-8">
-                            <div class="slider_content">
-                                <h2 class="slider_title wow fadeInLefttBig" data-wow-duration="1.3s" data-wow-delay="0.2s">Unfuzz:   </span>Kultūra, Švietimas & Tyrimai<span></h2>
-                                <p class="wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">Kultūra trina ribas!</p>
-                                <a href="#services" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">Veiklos</a>
-                            </div>--> <!-- slider content -->
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- container -->
-            </div> <!-- single slider -->
-        </div> <!-- header slider -->
-    </section>
+          <div class="meta-badges">
+            <span class="meta-badge"><i class="fas fa-hashtag" aria-hidden="true"></i> 2024-1-LT01-KA210-ADU-000253146</span>
+            <span class="meta-badge"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2024-09-01 – 2026-08-31</span>
+            <span class="meta-badge"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> LT · MT · AT</span>
+          </div>
+        </div>
 
-    <!--====== HEADER PART ENDS ======-->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="content-card">
+            <div class="section-label mb-2">Quick links</div>
 
-    <!--====== ABOUT PART START ======-->
+            <ul class="resource-list">
+              <li>
+                <a class="resource-link"
+                   href="https://drive.google.com/file/d/1l3wxDMtt6TMdv1YgYt4kURhNYcN3Z_ed/view?usp=drive_link"
+                   target="_blank" rel="noopener"
+                   title="Open / download PDF">
+                  <i class="fas fa-file-alt" aria-hidden="true"></i>
+                  <span>
+                    Download the guidelines (PDF, EN)
+                    <span class="small">A methodological resource for cultural and social sector educators</span>
+                  </span>
+                </a>
+              </li>
 
-    <section id="about" class="about_area pt-50 pb-50">
-            <div class="about_image bg_cover" style="background-image: url(assets/images/blog-1.jpg)"></div> <!-- about image -->
-            <div class="container">
-                <div class="row justify-content-end">
-                    <div class="col-lg-6">
-                        <div class="about_content">
-                            <div class="section_title">
-                                <h3 class="title">  <br>      <span>MeWell: Art Mediation for Knowledge, Cultural Participation and Wellbeing</span></h3>
-                                <p>2024-1-LT01-KA210-ADU-000253146</span></h3>
-                                <p>Unfuzz together with international partners from Austria and Malta started implement Erasmus+ Small scale partnership in adult education project MeWell.<p>
-            					<p>The aim of the project is to enhance the competencies of educators in the cultural sector by implementing art mediation methods to activate cultural and social participation among adults aged 50+ and seniors, especially those who have minimal access to cultural experiences.<p>
-                                    <div></div>
-                                <p>The OUTCOMES of the project:<p>
-                                <p>GUIDELINES – a methodological tool for non-formal educators working with adults 50+ and seniors, including those with fewer opportunities. These guidelines will elevate the art mediation skills of educators, enabling them not just to present artworks and information but also to engage these audiences in discussions, encourage personal reflections, and offer meaningful art experiences.<p>
-                                <a href="https://drive.google.com/file/d/1l3wxDMtt6TMdv1YgYt4kURhNYcN3Z_ed/view?usp=drive_link" target="_blank" title="Open Google Docs Document">
-    							<i class="fas fa-file-alt" style="font-size: 24px; color: #4caf50;"></i> <!-- Font Awesome icon for document -->
-   					 			<span>Review document in English</span></a>
-                                <p>E-PLATFORM – ART MEDIATION HUB will host training materials, facilitate communication and information exchange among art mediation practitioners, and continuously update with new methodology and best practices.<p>
-                                <p>MeWell activities will be implemented in three European countries: Lithuania, Malta, Austria.<p>
-                                <p>Project coordinator and partners: unfuzz, Openspace.innsbruck, Sans Frontiers Europe<p>
-                                <p>Project beginning: 2024-09-01        Project ending: 2026-08-31</span></h3>
-                        		<img src="assets/images/erasmus-logo.png" alt="Erasmus+ Logo" width="300" height="auto">
-                                <a target="_blank" class="d-block" href="mailto:info@unfuzz.org">info[at]unfuzz.org</a>
-                                <ul class="social">
-                                <a target="_blank" class="social_1" href="https://www.facebook.com/profile.php?id=61568610906377"><i class="lni lni-facebook-original"></i></a></li>
-                           <!-- </div>
-                           <a href="javascript:void(0)" class="main-btn">Daugiau</a>
-                            </div> -->
-                            </div>
+              <li>
+                <a class="resource-link"
+                   href="https://mewellculturalmediation.eu/en"
+                   target="_blank" rel="noopener"
+                   title="Open the project website">
+                  <i class="lni lni-world" aria-hidden="true"></i>
+                  <span>
+                    Project results website
+                    <span class="small">News, methods, and updates</span>
+                  </span>
+                </a>
+              </li>
 
-   							<!--<button id="myButton" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
-          						Daugiau
-      						</button>
-    						<div id="myPopup" class="popup">
-        						<div class="popup-content">
-            						<h3 class="title">Unfuzz</h3>
-            						<p>2023 metais bendraminčių įkurta nevyriausybinė organizacija veikianti kultūros edukacijų ir socialinės įtraukties srityje. Kalbame apie kultūros kaip mediatoriaus rolę visuomenės gyvenime.  Stebime pasaulio kultūros ir mokslo lauką, bei siekiame išlikti jautrūs vietos poreikiams, būti atviri naujovėms ir tarptautinėms tendencijoms.<p>
-            						<p>Rūpinamės kultūros mediacijos edukacija ir gilesniu kultūros pažinimu, organizuojame edukacijas verslui bei kultūros sektoriaus darbuotojams, kviečiame diskusijoms ir neformaliems pokalbiams, kultūros sektoriui padedame vystyti įtraukaus meno pristatymo formas, padėti lankytojui tapti dalyviu. Manome, kad kultūra įgalina kalbėti apie socialinius, politinius ar ekonominius iššūkius, sudaro sąlygas veiksmui ir atviram dialogui. Dalinamės tai, kuo patys tikime.<p>
-									<p>●	Mes kuriame sąlygas aktyviai dalyvauti savo bendruomenės gyvenime, o kultūra įgalina surasti sprendimus ir formas!<p>
-									<p>#pilietiškumas #suprantuprocesus #aktyvuskultūroje<p>
-									<p>●	Savo veiklomis skatiname bendravimą tarp kartų ir padedame stiprinti pagyvenusių žmonių kultūrinę įtrauktį<p>
-									<p>#gerbiupatirtį #aktyvuskultūroje #kultūrosmediacija<p>
-									<p>●	Pasitelkiant kokybinius tyrimo metodus, padedame suprasti kontekstus ir socialinius iššūkius<p>
-									<p>#kokybiniaityrimai #kontekstas #suvokimas #aiškumas
-									</p>
-            						<button id="closePopup" class="main-btn wow">
-                  						Uždaryti
-              						</button>
-        						</div>
-    						</div>-->
+              <li>
+                <a class="resource-link"
+                   href="mailto:info@unfuzz.org"
+                   title="Contact by email">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    Contact
+                    <span class="small">info@unfuzz.org</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
 
+            <div class="mt-3">
+              <img src="assets/images/erasmus-logo.png" alt="Erasmus+ Logo" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+          </div>
+        </div>
 
-                        <!-- <div class="about_counter d-flex flex-wrap">
-                            <div class="single_counter counter_1 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                                <div class="counter_wrapper">
-                                    <span class="counter">0</span>
-                                    <p>Įgyvendintų projektų skaičius</p>
-                                </div> 
-                            </div>  
-                            
-                            <div class="single_counter counter_2 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                                <div class="counter_wrapper">
-                                    <span class="counter">1</span>
-                                    <p>Pateiktų projektų skaičius</p>
-                                </div> 
-                           </div> 
-                            
-                           <div class="single_counter counter_2 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                                <div class="counter_wrapper">
-                                    <span class="counter">0</span>
-                                    <p>Klientų skaičius :)</p>
-                                </div> 
-                          </div> 
-                            
-                         <div class="single_counter counter_1 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="1.1s">
-                                <div class="counter_wrapper">
-                                    <span class="counter">2</span>
-                                    <p>Komandos narių</p>
-                                </div> 
-                       </div> 
-                     </div> 
-                    </div> -->
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- about wrapper -->
-    </section>
-    <!--====== ABOUT PART ENDS ======-->
+      </div>
+    </div>
+  </section>
 
+  <!-- Main content -->
+  <section class="pt-50 pb-20">
+    <div class="container">
+      <div class="row">
 
-    <!--====== BLOG PART START ======-->
+        <!-- Left column -->
+        <div class="col-lg-8">
 
-    <section id="project" class="blog_area pt-160 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center pb-25">
-                        <h3 class="title">Selected projects</h3>
-                        <p>Here you can find information related to our ongoing projects</p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="single_blog mt-30">
-                        <div class="blog_image">
-                            <img src="assets/images/blog-1.jpg" alt="blog">
-                        </div>
-                        <div class="blog_content">
-                            <div class="blog_meta">
-                            </div>
-                            <h4 class="blog_title"><a href="https://unfuzz.org/mewell.html">Unfuzz, together with international partners from Austria and Malta, launched the Erasmus+ small partnership adult education project MeWell</a></h4>
-                            <p>The project focuses on people aged 50 and over, with a special focus on seniors who, for various reasons, have limited access to cultural experiences. The aim is not only to enable these groups to participate more actively in cultural life, but also to ensure that educators in the cultural sector acquire the necessary knowledge and skills that allow a better understanding of the needs and expectations of this audience.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="single_blog d-sm-flex mt-30">
-                        <div class="blog_image">
-                            <img src="assets/images/blog-2.jpg" alt="blog">
-                        </div>
-                        <div class="blog_content blog_content_2 media-body">
-                            <h4 class="blog_title"><a href="https://unfuzz.org/saulute.html">Unfuzz solution: Irena Saulutė Špakauskienė's exile story through a mobile guide and augmented reality.</a></h4>
-                            <p>In collaboration with the Lithuanian Ethnographic Museum, Unfuzz has created innovative solutions that allow modern audiences to experience the authentic stories of exiles.</p>
-                            <a href="https://unfuzz.org/saulute.html" class="more">Read more</a>
-                        </div>
-                    </div>
+          <div class="content-card mb-4">
+            <div class="section-label">About the project</div>
+            <p class="mb-3">
+              Unfuzz, together with international partners from Austria and Malta, is implementing the Erasmus+ Small-Scale
+              Partnership in Adult Education project <strong>MeWell</strong>.
+            </p>
+            <p class="mb-0">
+              The goal of the project is to strengthen the competencies of cultural sector educators and andragogues by applying
+              cultural mediation methods. These methods foster more active cultural and social engagement among adults aged 50+
+              and seniors, particularly those whose opportunities to access cultural experiences are limited.
+            </p>
+          </div>
 
-                    <div class="single_blog d-sm-flex mt-30">
-                        <div class="blog_image">
-                            <img src="assets/images/blog-3.jpg" alt="blog">
-                        </div>
-                        <div class="blog_content blog_content_2 media-body">
-                            <h4 class="blog_title"><a href="https://unfuzz.org/euro-opp.html">EURO-OPP. Erasmus+</a></h4>
-                            <p>The project's goal is to promote the social and labor integration of adults of foreign origin by providing learning, employment, and social participation opportunities, with special attention to vulnerable groups.</p>
-                            <a href="https://unfuzz.org/euro-opp.html" class="more">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+          <div class="content-card mb-4">
+            <div class="section-label">Who it is for</div>
+            <div class="kv">
+              <div>
+                <strong>Primary audience</strong>
+                Adults aged 50+ and seniors, including those with fewer opportunities.
+              </div>
+              <div>
+                <strong>Professional audience</strong>
+                Cultural educators, andragogues, and non-formal education providers in the social sector.
+              </div>
+            </div>
+          </div>
 
-    <!--====== BLOG PART ENDS ======-->
+          <div class="content-card mb-4">
+            <div class="section-label">Outcomes</div>
 
-    <!--====== CONTACT PART START ======-->
+            <h4 class="mb-2">1) Guidelines (methodological resource)</h4>
+            <p class="mb-3">
+              A methodological resource designed for non-formal education providers in the cultural and social sectors who work
+              with adults aged 50+ and seniors, including those with fewer opportunities. The guidelines support the development
+              of cultural and art mediation skills: not only presenting artworks and information, but also engaging participants
+              in discussion, encouraging reflection, and creating meaningful experiences.
+            </p>
 
-    <section id="contact" class="contact_area pt-60 pb-60">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center pb-25">
-                        <h3 class="title">Contact Us</h3>
-                    </div> <!-- section title -->
-                </div>
-        	</div> <!-- row -->
-            <div class="row">    
-                <div class="col-lg-4 ml-auto text-left mb-5 mb-lg-0">
-                        <i class="contact-info-title text-left"></i>
-                        <div>Unfuzz, NGO</div>
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <a class="d-block" href="mailto:info@unfuzz.org">info[at]unfuzz.org</a>
-                    </div>
-                    
-                    <div class="col-lg-6 mr-auto text-left mb-5 mb-lg-0">
-                        <i class="contact-info-title text-left"></i>
-                        <div>Registration number (company code): 306268677</div>
-                        <i class="contact-info-title text-left"></i>
-                        <div>VAT payer ID: LT100017340418 </div>
-                        <i class="contact-info-title text-left"></i>
-                        <div>Bank account holder: Unfuzz, VšĮ
-                        <i class="contact-info-title text-left"></i>
-                        <div>Account No (IBAN): LT71 3500 0100 1632 8220</div>
-                        <div>Bank name: Paysera LT, UAB</div>
-                        <div>Bank SWIFT: EVIULT2VXXX</div>
-                        <div>Branch address: Pilaites pr. 16, Vilnius, LT-04352, Lithuania</div>	
-                    </div>
-			</div>
-        </div>     
+            <h4 class="mb-2">2) Cultural mediation e-platform</h4>
+            <p class="mb-0">
+              A digital space hosting training materials and enabling the exchange of practices and knowledge among cultural
+              mediation practitioners. The platform will be regularly updated with new methods and examples of good practice.
+            </p>
+          </div>
 
+        </div>
 
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
+        <!-- Right column -->
+        <div class="col-lg-4">
 
-    <!--====== CONTACT PART ENDS ======-->
+          <div class="content-card mb-4">
+            <div class="section-label">Key information</div>
+            <div class="kv">
+              <div>
+                <strong>Duration</strong>
+                2024-09-01 – 2026-08-31
+              </div>
+              <div>
+                <strong>Countries</strong>
+                Lithuania, Malta, Austria
+              </div>
+              <div>
+                <strong>Coordinator</strong>
+                Unfuzz, NGO
+              </div>
+              <div>
+  <strong>Partners</strong>
 
-    <!--====== FOOTER PART START ======-->
+  <a href="https://openspace-innsbruck.com/"
+     target="_blank" rel="noopener"
+     style="display:inline-flex; align-items:center; gap:10px; text-decoration:none; margin-top:6px;">
+    <img src="https://openspace-innsbruck.com/wp-content/uploads/2018/05/cropped-logo_openspace_innsbruck_srgb-1-2.png"
+         alt="openspace.innsbruck logo"
+         style="height:28px; width:auto;">
+    <span>openspace.innsbruck</span>
+  </a>
 
-   <section id="footer" class="footer_area">
-        <div class="footer_widget pt-50 pb-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 order-md-3 order-lg-1">
-                        <div class="footer_about mt-50">
-                            <a href="./en.html"><img src="assets/images/logo.svg" alt="logo" width="100" height="100"></a>
-                            <p>Unfuzz: Solutions for Culture. Cultural Mediators </p>
-                            <ul class="social">
-                                <li><a class="social_1" href="https://www.facebook.com/kulturosmediatoriai"><i class="lni lni-facebook-original"></i></a></li>
-                                <!--<li><a class="social_2" href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a class="social_3" href="javascript:void(0)"><i class="lni lni-instagram-original"></i></a></li> -->
-                                <li><a class="social_4" href="https://lt.linkedin.com/company/unfuzz?trk=public_profile_experience-item_profile-section-card_subtitle-click"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div> <!-- footer about -->
-                    </div>
-                    <div class="col-lg-6 col-md-6 order-md-3 order-lg-2">
-                        <div class="footer_link_wrapper d-flex flex-wrap">
-                            <div class="footer_link mt-45">
-                                <h4 class="footer_title">Quick links</h4>
-                                <ul class="link">
-                                    <li><a href="#home">Unfuzz</a></li>
-                                    <li><a href="#about">Company</a></li>
-                                    <!--<li><a href="#news">News</a></li>-->
-                                    <li><a href="#services">Expertise</a></li>
-                                    <li><a href="#project">Projects</a></li>
-                                </ul>
-                            </div> <!-- footer link -->
-                           <!-- <div class="footer_link mt-45">
-                                <h4 class="footer_title">Support</h4>
-                                <ul class="link">
-                                    <li><a href="javascript:void(0)">Customer Support</a></li>
-                                    <li><a href="javascript:void(0)">Privacy & Policy</a></li>
-                                    <li><a href="javascript:void(0)">Terms & Condition</a></li>
-                                    <li><a href="javascript:void(0)">Forum</a></li>
-                                    <li><a href="javascript:void(0)">Tour Guide</a></li>
-                                </ul>
-                            </div> <!-- footer link -->
-                        </div> <!-- footer link wrapper -->
-                    </div>
-                    <!-- <div class="col-lg-4 col-md-6 order-md-2 order-lg-3">
-                        <div class="footer_subscribe mt-45">
-                            <h4 class="footer_title">Subscribe Newsletter</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam.</p>
-                            <div class="subscribe_form">
-                                <form action="#">
-                                    <input type="text" placeholder="Enter email">
-                                    <button><i class="lni lni-arrow-right"></i></button>
-                                </form>
-                            </div>
-                        </div> <!-- footer subscribe -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
+  <br>
+  <span>Sans Frontiers Europe</span>
+</div>
 
-        </div> <!-- footer widget -->
-    </section>
+            </div>
+          </div>
 
-    <!--====== FOOTER PART ENDS ======-->
+          <div class="content-card mb-4">
+            <div class="section-label">Project timeline</div>
+            <ul class="timeline">
+              <li><strong>Start:</strong> 2024-09-01</li>
+              <li><strong>Implementation:</strong> activities in LT / MT / AT</li>
+              <li><strong>Dissemination:</strong> guidelines + e-platform</li>
+              <li><strong>End:</strong> 2026-08-31</li>
+            </ul>
+          </div>
 
-    <!--====== BACK TOP TOP PART START ======-->
+          <div class="content-card">
+            <div class="section-label">Follow Unfuzz</div>
+            <ul class="social-clean">
+              <li>
+                <a target="_blank" rel="noopener"
+                   href="https://www.facebook.com/profile.php?id=61568610906377"
+                   aria-label="Unfuzz Facebook">
+                  <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener"
+                   href="https://www.facebook.com/kulturosmediatoriai"
+                   aria-label="Kultūros mediatoriai Facebook">
+                  <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener"
+                   href="https://lt.linkedin.com/company/unfuzz"
+                   aria-label="Unfuzz LinkedIn">
+                  <i class="lni lni-linkedin-original" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!--====== BACK TOP TOP PART ENDS ======-->
+  <!-- Footer -->
+  <section class="footer-min">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0 mt-2">Solutions for culture. Cultural mediation, education, and research.</p>
+        </div>
+        <div class="col-md-6 mt-3 mt-md-0 text-md-right">
+          <a href="mailto:info@unfuzz.org"><i class="fas fa-envelope" aria-hidden="true"></i> info@unfuzz.org</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-<script>
-        myButton.addEventListener("click", function () {
-            myPopup.classList.add("show");
-        });
-        closePopup.addEventListener("click", function () {
-            myPopup.classList.remove("show");
-        });
-        window.addEventListener("click", function (event) {
-            if (event.target == myPopup) {
-                myPopup.classList.remove("show");
-            }
-        });
-    </script>
-
-
-    <!--====== Jquery js ======-->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.4.5.2.min.js"></script>
-
-
-    <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-
-    <!--====== Counter Up js ======-->
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-
-    <!--====== Nice Select js ======-->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-
-    <!--====== WOW js ======-->
-    <script src="assets/js/wow.min.js"></script>
-
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-
-
-
+  <!-- JS (same as your stack) -->
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.4.5.2.min.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/scrolling-nav.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
