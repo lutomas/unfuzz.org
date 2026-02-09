@@ -1,7 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: TraveLand - Tour and Travel Agency Template
-    Author: UIdeck
 
 -----------------------------------------------------------------------------------
 
@@ -1870,4 +1866,159 @@ p {
   color: #fff;
   background-color: #EEC41E;
 }
+
+/* === Services: compact & modern === */
+.services-compact { background: #fff; }
+.services-compact .section_title p { max-width: 720px; margin: 0 auto; }
+
+.services-compact .service-card{
+  padding: 22px 16px;          /* mažiau tuščios erdvės */
+  border-radius: 18px;
+  height: 100%;                /* vienodas aukštis */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.services-compact .services_icon{ margin-bottom: 10px; }
+.services-compact .services_icon i{
+  width: 70px;
+  height: 70px;
+  line-height: 66px;
+  font-size: 34px;
+}
+
+.services-compact .services_content .title{
+  margin-top: 12px;
+  font-size: 20px;             /* kompaktiškiau */
+  letter-spacing: 0.02em;
+}
+
+.services-compact .service-desc{
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.55;
+  min-height: 84px;            /* suvienodina vizualiai (gali keisti) */
+}
+
+/* mini tag’ai apačioje */
+.services-compact .service-tags{
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.services-compact .service-tag{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.08);
+  background: rgba(0,0,0,.02);
+  line-height: 1;
+}
+
+/* gražesnis hover */
+.services-compact .single_service:hover{
+  transform: translateY(-2px);
+  transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 14px 30px rgba(0,0,0,.08);
+}
+/* === Projects: clean unified grid === */
+.projects-clean .project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;          /* SVARBIAUSIA dalis */
+  transition: transform .3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* overlay CTA */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(56, 66, 77, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.overlay-btn {
+  background: #EEC41E;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* labels & links */
+.project-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  opacity: .7;
+  margin-bottom: 6px;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.project-links a {
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #EEC41E;
+}
+.footer_area .container{
+  max-width: 1040px; /* siauresnis footer turinys */
+}
+
+.footer_about .social li{
+  margin-top: 0;
+}
+
+.footer_about p{
+  opacity: .9;
+}
+
+.footer_link .link li{
+  margin-top: 10px;
+}
+
+.footer_link .link li a{
+  opacity: .9;
+}
+
+.footer_link .link li a:hover{
+  opacity: 1;
+}
+
+
 /*# sourceMappingURL=style.css.map */
