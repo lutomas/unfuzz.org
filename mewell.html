@@ -1,0 +1,356 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MeWell — Cultural Mediation | Unfuzz</title>
+
+  <meta name="description" content="MeWell is an Erasmus+ small-scale partnership project designed to strengthen cultural mediation competencies and increase cultural participation and wellbeing among adults aged 50+ and seniors.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Your existing CSS stack -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/nice-select.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.4.5.2.min.css">
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Font Awesome (needed for fas icons). If you already bundle it elsewhere, remove this. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .page-hero { padding: 90px 0 40px; background: #f7f7f7; }
+    .page-hero h1 { font-size: 30px; line-height: 1.2; margin: 14px 0 12px; }
+    .mewell-logo { max-width: 340px; height: auto; display: block; }
+    .meta-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .meta-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border-radius: 999px;
+      background: #ffffff; border: 1px solid rgba(0,0,0,0.08);
+      font-size: 14px;
+    }
+    .content-card {
+      background: #fff; border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 14px; padding: 22px;
+    }
+    .section-label {
+      font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em;
+      opacity: 0.75; margin-bottom: 10px;
+    }
+    .resource-list { list-style: none; padding-left: 0; margin: 0; display: grid; gap: 10px; }
+    .resource-link {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px; border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+      text-decoration: none;
+      transition: transform 0.06s ease, box-shadow 0.12s ease;
+    }
+    .resource-link:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,0.06); text-decoration: none; }
+    .resource-link i { font-size: 18px; }
+    .resource-link .small { display:block; font-size: 13px; opacity: 0.75; margin-top: 2px; }
+
+    .timeline { list-style: none; padding-left: 0; margin: 0; }
+    .timeline li { padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+    .timeline li:last-child { border-bottom: none; }
+
+    .kv { display:flex; flex-wrap: wrap; gap: 10px 24px; }
+    .kv div { min-width: 240px; }
+    .kv strong { display:block; font-size: 13px; opacity: 0.75; font-weight: 600; }
+
+    .social-clean { list-style:none; padding-left:0; margin:0; display:flex; gap:12px; }
+    .social-clean a {
+      display:inline-flex; align-items:center; justify-content:center;
+      width:40px; height:40px; border-radius: 999px;
+      border:1px solid rgba(0,0,0,0.08);
+      text-decoration: none;
+    }
+
+    .footer-min { padding: 40px 0; border-top: 1px solid rgba(0,0,0,0.08); margin-top: 50px; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header / Navbar -->
+  <section class="header_area">
+    <div class="header_navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="/en.html">
+                <img id="logo_img" src="assets/images/logo.svg" alt="Unfuzz logo" width="60" height="60">
+              </a>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="page-scroll" href="/en.html">Home</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="/en.html#project">Projects</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="/en.html#contact">Contacts</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-8">
+          <!-- MeWell logo (same as LT page, sourced from mewellculturalmediation.eu) -->
+          <img
+            class="mewell-logo"
+            src="https://mewellculturalmediation.eu/_next/image?q=100&url=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fmedia%2Ffile%2Fmewell.png%3F2026-01-21T08%3A59%3A21.265Z&w=3840"
+            alt="MeWell Cultural Mediation logo"
+            loading="lazy"
+          >
+
+          <div class="section-label mt-3">Erasmus+ small-scale partnership project (adult education)</div>
+          <h1>Art Mediation for Knowledge, Cultural Participation and Wellbeing</h1>
+
+          <p class="mb-3">
+            MeWell strengthens the competencies of cultural sector educators and andragogues by applying <strong>cultural mediation</strong>
+            methods that support more active participation in culture and community life among adults aged 50+.
+          </p>
+
+          <div class="meta-badges">
+            <span class="meta-badge"><i class="fas fa-hashtag" aria-hidden="true"></i> 2024-1-LT01-KA210-ADU-000253146</span>
+            <span class="meta-badge"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2024-09-01 – 2026-08-31</span>
+            <span class="meta-badge"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> LT · MT · AT</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="content-card">
+            <div class="section-label mb-2">Quick links</div>
+
+            <ul class="resource-list">
+              <li>
+                <a class="resource-link"
+                   href="https://drive.google.com/file/d/1l3wxDMtt6TMdv1YgYt4kURhNYcN3Z_ed/view?usp=drive_link"
+                   target="_blank" rel="noopener"
+                   title="Open / download PDF">
+                  <i class="fas fa-file-alt" aria-hidden="true"></i>
+                  <span>
+                    Download the guidelines (PDF, EN)
+                    <span class="small">A methodological resource for cultural and social sector educators</span>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a class="resource-link"
+                   href="https://mewellculturalmediation.eu/en"
+                   target="_blank" rel="noopener"
+                   title="Open the project website">
+                  <i class="lni lni-world" aria-hidden="true"></i>
+                  <span>
+                    Project results website
+                    <span class="small">News, methods, and updates</span>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a class="resource-link"
+                   href="mailto:info@unfuzz.org"
+                   title="Contact by email">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    Contact
+                    <span class="small">info@unfuzz.org</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="mt-3">
+              <img src="assets/images/erasmus-logo.png" alt="Erasmus+ Logo" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <section class="pt-50 pb-20">
+    <div class="container">
+      <div class="row">
+
+        <!-- Left column -->
+        <div class="col-lg-8">
+
+          <div class="content-card mb-4">
+            <div class="section-label">About the project</div>
+            <p class="mb-3">
+              Unfuzz, together with international partners from Austria and Malta, is implementing the Erasmus+ Small-Scale
+              Partnership in Adult Education project <strong>MeWell</strong>.
+            </p>
+            <p class="mb-0">
+              The goal of the project is to strengthen the competencies of cultural sector educators and andragogues by applying
+              cultural mediation methods. These methods foster more active cultural and social engagement among adults aged 50+
+              and seniors, particularly those whose opportunities to access cultural experiences are limited.
+            </p>
+          </div>
+
+          <div class="content-card mb-4">
+            <div class="section-label">Who it is for</div>
+            <div class="kv">
+              <div>
+                <strong>Primary audience</strong>
+                Adults aged 50+ and seniors, including those with fewer opportunities.
+              </div>
+              <div>
+                <strong>Professional audience</strong>
+                Cultural educators, andragogues, and non-formal education providers in the social sector.
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card mb-4">
+            <div class="section-label">Outcomes</div>
+
+            <h4 class="mb-2">1) Guidelines (methodological resource)</h4>
+            <p class="mb-3">
+              A methodological resource designed for non-formal education providers in the cultural and social sectors who work
+              with adults aged 50+ and seniors, including those with fewer opportunities. The guidelines support the development
+              of cultural and art mediation skills: not only presenting artworks and information, but also engaging participants
+              in discussion, encouraging reflection, and creating meaningful experiences.
+            </p>
+
+            <h4 class="mb-2">2) Cultural mediation e-platform</h4>
+            <p class="mb-0">
+              A digital space hosting training materials and enabling the exchange of practices and knowledge among cultural
+              mediation practitioners. The platform will be regularly updated with new methods and examples of good practice.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right column -->
+        <div class="col-lg-4">
+
+          <div class="content-card mb-4">
+            <div class="section-label">Key information</div>
+            <div class="kv">
+              <div>
+                <strong>Duration</strong>
+                2024-09-01 – 2026-08-31
+              </div>
+              <div>
+                <strong>Countries</strong>
+                Lithuania, Malta, Austria
+              </div>
+              <div>
+                <strong>Coordinator</strong>
+                Unfuzz, NGO
+              </div>
+              <div>
+  <strong>Partners</strong>
+
+  <a href="https://openspace-innsbruck.com/"
+     target="_blank" rel="noopener"
+     style="display:inline-flex; align-items:center; gap:10px; text-decoration:none; margin-top:6px;">
+    <img src="https://openspace-innsbruck.com/wp-content/uploads/2018/05/cropped-logo_openspace_innsbruck_srgb-1-2.png"
+         alt="openspace.innsbruck logo"
+         style="height:28px; width:auto;">
+    <span>openspace.innsbruck</span>
+  </a>
+
+  <br>
+  <span>Sans Frontiers Europe</span>
+</div>
+
+            </div>
+          </div>
+
+          <div class="content-card mb-4">
+            <div class="section-label">Project timeline</div>
+            <ul class="timeline">
+              <li><strong>Start:</strong> 2024-09-01</li>
+              <li><strong>Implementation:</strong> activities in LT / MT / AT</li>
+              <li><strong>Dissemination:</strong> guidelines + e-platform</li>
+              <li><strong>End:</strong> 2026-08-31</li>
+            </ul>
+          </div>
+
+          <div class="content-card">
+            <div class="section-label">Follow Unfuzz</div>
+            <ul class="social-clean">
+              <li>
+                <a target="_blank" rel="noopener"
+                   href="https://www.facebook.com/profile.php?id=61568610906377"
+                   aria-label="Unfuzz Facebook">
+                  <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener"
+                   href="https://www.facebook.com/kulturosmediatoriai"
+                   aria-label="Kultūros mediatoriai Facebook">
+                  <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener"
+                   href="https://lt.linkedin.com/company/unfuzz"
+                   aria-label="Unfuzz LinkedIn">
+                  <i class="lni lni-linkedin-original" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer-min">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0 mt-2">Solutions for culture. Cultural mediation, education, and research.</p>
+        </div>
+        <div class="col-md-6 mt-3 mt-md-0 text-md-right">
+          <a href="mailto:info@unfuzz.org"><i class="fas fa-envelope" aria-hidden="true"></i> info@unfuzz.org</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS (same as your stack) -->
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.4.5.2.min.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/scrolling-nav.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
